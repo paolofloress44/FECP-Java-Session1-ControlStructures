@@ -7,11 +7,11 @@ public class Main {
         float Price = 0;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter membership status (Regular, VIP, Premium): ");
-        String membershipStatus = scanner.next();
+        String membershipStatus = scanner.nextLine().toUpperCase();
         System.out.print("Enter age: ");
         int memberAge = scanner.nextInt();
 
-        if (Objects.equals(membershipStatus, "Regular")){
+        if (membershipStatus.equals("REGULAR")){
             if (memberAge < 18){
                 System.out.printf("Price: $%.2f", Price + 50.00);
             }
@@ -22,7 +22,7 @@ public class Main {
                 System.out.printf("Price: $%.2f", Price + 75.00);
             }
         }
-        else if (Objects.equals(membershipStatus, "VIP")){
+        else if (membershipStatus.equals("VIP")){
             if (memberAge < 18){
                 System.out.printf("Price: $%.2f", Price + 75.00);
             }
@@ -33,7 +33,7 @@ public class Main {
                 System.out.printf("Price: $%.2f", Price + 112.50);
             }
         }
-        else if (Objects.equals(membershipStatus, "Premium")){
+        else if (membershipStatus.equals("PREMIUM")){
             if (memberAge < 18){
                 System.out.printf("Price: $%.2f", Price + 100.00);
             }
@@ -44,6 +44,6 @@ public class Main {
                 System.out.printf("Price: $%.2f", Price + 150.00);
             }
         }
-        else System.out.println("Invalid Membership Input");
+        else System.out.println("Invalid membership status entered.");
     }
 }

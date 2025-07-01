@@ -1,6 +1,6 @@
 Test Name,Input,Expected Output,Actual Output,Status,Timestamp
-"testPremiumUpperCase","PREMIUM\n70\n","Price: $150.00","Enter membership status (Regular, VIP, Premium): Enter age: Invalid Membership Input","FAIL","2025-07-01 15:37:54"
-"testMixedCaseVIPSenior","vIp\n66\n","Price: $112.50","Enter membership status (Regular, VIP, Premium): Enter age: Invalid Membership Input","FAIL","2025-07-01 15:37:54"
-"testVipLowerCase","vip\n45\n","Price: $150.00","Enter membership status (Regular, VIP, Premium): Enter age: Invalid Membership Input","FAIL","2025-07-01 15:37:54"
-"testRegularAdult","Regular\n30\n","Price: $100.00","Enter membership status (Regular, VIP, Premium): Enter age: Price: $100.00","PASS","2025-07-01 15:37:54"
-"testInvalidStatus","Gold\n30\n","Invalid membership status entered.","Enter membership status (Regular, VIP, Premium): Enter age: Invalid Membership Input","FAIL","2025-07-01 15:37:54"
+"testPremiumUpperCase","PREMIUM\n70\n","Price: $150.00","Enter membership status (Regular, VIP, Premium): Enter age: Price: $150.00","PASS","2025-07-01 15:53:32"
+"testMixedCaseVIPSenior","vIp\n66\n","Price: $112.50","Enter membership status (Regular, VIP, Premium): Enter age: Price: $112.50","PASS","2025-07-01 15:53:32"
+"testVipLowerCase","vip\n45\n","Price: $150.00","Enter membership status (Regular, VIP, Premium): Enter age: Price: $150.00","PASS","2025-07-01 15:53:32"
+"testRegularAdult","Regular\n30\n","Price: $100.00","Enter membership status (Regular, VIP, Premium): Enter age: Price: $100.00","PASS","2025-07-01 15:53:32"
+"testInvalidStatus","Gold\n30\n","Invalid membership status entered.","Enter membership status (Regular, VIP, Premium): Enter age: Invalid membership status entered.","PASS","2025-07-01 15:53:32"
